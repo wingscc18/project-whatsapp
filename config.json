@@ -1,0 +1,5 @@
+{
+    "pathffmpeg": "C:\\PATH_PROGRAMS\\ffmpeg.exe", 
+    "pathchrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "prefix": "$"
+}
