@@ -1,4 +1,4 @@
-const { generate } = require('qrcode-terminal');
+const qrcode = require('qrcode-terminal');
 const { Client, LocalAuth } = require('whatsapp-web.js');
 const { join } = require('path');
 const { readdirSync } = require('fs');
@@ -18,7 +18,7 @@ const client = new Client({
 })
 
 client.on('qr', qr => {
-    generate(qr, { small: true });
+    qrcode.generate(qr, { small: true });
 });
 
 client.on('ready', () => {
